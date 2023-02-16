@@ -1,39 +1,39 @@
 <?php 
 require_once('DBS_Connection.php');
 class Regjistrimi extends dbCon{
-    private $Emri;
-    private $Email;
-    private $Password;
+    private $username;
+    private $email;
+    private $password;
     private $dbConn;
-    public function __construct($Emri,$Email,$Password){
-        $this->Emri = $Emri;
-        $this->Email = $Email;
-        $this->Password = $Password;
+    public function __construct($username,$email,$password){
+        $this->username = $username;
+        $this->email = $email;
+        $this->password = $password;
         $this->dbConn = $this->connDB();
     }
-    public function getEmri(){
-        return $this->Emri;
+    public function getUsername(){
+        return $this->username;
     }
     public function getEmail(){
-        return $this->Email;
+        return $this->email;
     }
     public function getPassword(){
-        return $this->Password;
+        return $this->password;
     }
-    public function setEmri($Emri){
-        $this->Emri=$Emri;
+    public function setUsername($username){
+        $this->username=$username;
     }
-    public function setEmail($Email){
-        $this->Email=$Email;
+    public function setEmail($email){
+        $this->email=$email;
     }
-    public function setPassword($Password){
-        $this->Password=$Password;
+    public function setPassword($password){
+        $this->password=$password;
     }
     public function inserto(){
         try{
-            $sql = "INSERT INTO Studenti(Emri,Email,Password) VALUES(?,?,?)";
+            $sql = "INSERT INTO Studenti(username,email,password) VALUES(?,?,?)";
             $stm = $this->dbConn->prepare($sql);
-            $stm->execute([$this->Emri, $this->Email, $this->Password]);
+            $stm->execute([$this->username, $this->email, $this->password]);
         }catch (Exception $e) {
             return $e->getMessage();
         }
