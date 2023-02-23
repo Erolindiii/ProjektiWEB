@@ -1,11 +1,9 @@
 <?php 
-
 class User{
     private $id;
     private $name;
     private $surname;
     private $email;
-    // private $username;
     private $password;
 
     function __construct($id,$name,$surname,$email,$password){
@@ -13,10 +11,8 @@ class User{
          $this->name=$name;
          $this->surname=$surname;
          $this->email=$email;
-        //  $this->username=$username;
          $this->password=$password;
     }
-
 
     function getId(){
         return $this->id;
@@ -30,13 +26,8 @@ class User{
     function getEmail(){
         return $this->email;
     }
-    // function getUsername(){
-    //     return $this->username;
-    // }
     function getPassword(){
         return $this->password;
     }
 }
-
-
 ?>

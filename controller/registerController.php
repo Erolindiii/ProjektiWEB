@@ -18,6 +18,4 @@ if(isset($_POST['registerBtn'])){
         $userRepository->insertUser($user);
     }
 }
-
-
 ?>
