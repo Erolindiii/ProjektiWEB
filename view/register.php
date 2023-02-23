@@ -1,3 +1,26 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
+        <input type="text" name="name" placeholder="name..."> <br><br>
+        <input type="text" name="surname" placeholder="surname..."> <br><br>
+        <input type="text" name="email" placeholder="email..."> <br><br>
+        <input type="text" name="username" placeholder="username..."> <br><br>
+        <input type="text" name="password" placeholder="password..."> <br><br>
+      
+
+        <input type="submit" name="registerBtn" value="register"> <br><br>
+    </form>
+
+   <?php //include_once '../controller/registerController.php'?>
+</body>
+</html> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,10 +31,10 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>Login</title>
 </head>
-<link rel="stylesheet" href="WebStyle.css">
+<link rel="stylesheet" href="../WebStyle.css">
 <body>
     <header class="page-header" >
-        <a href="http://127.0.0.1:5500/ProjektiWEB/HomePage.htm"><img src="bNE_Logo-noBG.png" alt="bNE" style="width: 125px; height: 100px;"></a>
+        <a href="http://127.0.0.1:5500/ProjektiWEB/HomePage.htm"><img src="../bNE_Logo-noBG.png" alt="bNE" style="width: 125px; height: 100px;"></a>
             <ul class="page-header_nav-list-home">
                 <li>
                     <a href="http://127.0.0.1:5500/ProjektiWEB/HomePage.htm" aria-current="page" class="page-header_nav-link-home">
@@ -123,7 +146,7 @@
             <!-- Registration Form -->
             <div class="form signup">
                 <span class="title">Sign Up</span>
-                <form action="handle_form.php" method="post" >
+                <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
                     <div class="input-field">
                         <input type="text" name="name" placeholder="Enter your name" required>
                         <i class="uil uil-user"></i>
@@ -154,7 +177,7 @@
                     </div>
 
                     <div class="input-field button" id="input-field">
-                        <input type="submit" value="Signup" name="submit">
+                        <input type="submit" value="Signup" name="registerBtn">
                     </div>
                 </form>
 
@@ -166,6 +189,7 @@
             </div>
         </div>
     </div>
-    <script src="Login.js"></script>
+    <script src="../Login.js"></script>
+    <?php include_once '../controller/registerController.php'?>
 </body>
 </html>
