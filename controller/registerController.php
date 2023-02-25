@@ -5,13 +5,13 @@ include_once '../models/user.php';
 if(isset($_POST['registerBtn'])){
     if(empty($_POST['name']) || empty($_POST['surname']) || empty($_POST['email']) || 
     empty($_POST['password'])){
-        echo "Please fill all fields!";
+        // echo "Please fill all fields!";
     }else{
         $name = $_POST['name'];
         $surname = $_POST['surname'];
         $email = $_POST['email'];
         $password = $_POST['password'];
-        $id = rand(100,999).$username;
+        $id = rand(100,999);
 
         $user = new User($id,$name,$surname,$email,$password);
         $userRepository = new UserRepository();

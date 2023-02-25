@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 :root{
-   --blue:#2980b9;
+   --green:green;
    --red:tomato;
    --orange:orange;
    --black:#333;
@@ -49,7 +49,7 @@ section{
    display: block;
    width: 100%;
    text-align: center;
-   background-color: var(--blue);
+   background-color: var(--green);
    color:var(--white);
    font-size: 1.7rem;
    padding:1.2rem 3rem;
@@ -79,7 +79,7 @@ section{
 }
 
 .message{
-   background-color: var(--blue);
+   background-color: var(--green);
    position: sticky;
    top:0; left:0;
    z-index: 10000;
@@ -110,7 +110,7 @@ section{
 }
 
 .header{
-   background-color: var(--blue);
+   background-color: var(--green);
    position: sticky;
    top:0; left:0;
    z-index: 1000;
@@ -154,7 +154,7 @@ section{
    padding:.1rem .5rem;
    border-radius: .5rem;
    background-color: var(--white);
-   color:var(--blue);
+   color:var(--green);
    font-size: 2rem;
 }
 
@@ -439,7 +439,7 @@ section{
 }
 
 .order-message-container::-webkit-scrollbar-thumb{
-   background-color: var(--blue);
+   background-color: var(--green);
 }
 
 .order-message-container .message-container{
@@ -489,23 +489,10 @@ section{
 }
 
 .order-message-container .message-container .customer-details p span{
-   color:var(--blue);
+   color:var(--green);
    padding:0 .5rem;
    text-transform: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -555,7 +542,7 @@ section{
    .header .flex .navbar{
       position: absolute;
       top:99%; left:0; right:0;
-      background-color: var(--blue);
+      background-color: var(--green);
       clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
       transition: .2s linear;
    }

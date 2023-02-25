@@ -2,7 +2,7 @@
 
    <div class="flex">
 
-      <a href="#" class="logo">foodies</a>
+      <a href="#" class="logo">Bad News Eagles merch</a>
 
       <nav class="navbar">
          <a href="admin.php">add products</a>

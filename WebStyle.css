@@ -552,7 +552,7 @@ body{
 .container{
     position: relative;
     max-width: 450px;
-    width: 100%;
+    width: 800%;
     background: #d40231;
     border-radius: 10px;
     box-shadow:0 12px 75px 0 whitesmoke,0 17px 50px 0 #d40231;
@@ -586,7 +586,7 @@ body{
     transition: opacity 0.2s ease;
 }
 .container.active .forms{
-    height: 670px;
+    height: 600px;
 }
 .container .form .title{
     position: relative;
@@ -757,11 +757,3 @@ footer{
     font-weight: 200;
 }
 /*Shop CSS*/
-.container-shop{
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: 200px;
-}
