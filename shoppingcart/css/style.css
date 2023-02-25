@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 :root{
+   --bNE-body-color: #0d0d0d;
+   --bNE-header-text-color: #d40231;
    --green:green;
    --red:tomato;
    --orange:orange;
@@ -110,7 +112,7 @@ section{
 }
 
 .header{
-   background-color: var(--green);
+   background-color: var(--bNE-body-color);
    position: sticky;
    top:0; left:0;
    z-index: 1000;
@@ -125,13 +127,15 @@ section{
 }
 
 .header .flex .logo{
-   margin-right: auto;
-   font-size: 2.5rem;
-   color:var(--white);
+   display: inline-block;
+   /* margin-right: auto; */
+   padding: 0 5px;
+   font-size: 4.5rem;
+   color:var(--red);
 }
 
 .header .flex .navbar a{
-   margin-left: 2rem;
+   margin-left: 1rem;
    font-size: 2rem;
    color:var(--white);
 }
@@ -147,13 +151,13 @@ section{
 }
 
 .header .flex .cart:hover{
-   color:yellow;
+   color:var(--bNE-header-text-color);
 }
 
 .header .flex .cart span{
    padding:.1rem .5rem;
    border-radius: .5rem;
-   background-color: var(--white);
+   background-color: var(--bNE-header-text-color);
    color:var(--green);
    font-size: 2rem;
 }
@@ -162,7 +166,7 @@ section{
    margin-left: 2rem;
    font-size: 3rem;
    cursor: pointer;
-   color:var(--white);
+   color:var(--bNE-header-text-color);
    display: none;
 }
 

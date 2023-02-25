@@ -8,88 +8,15 @@
     <script src="https://kit.fontawesome.com/3606fe9745.js" crossorigin="anonymous"></script>
 </head>
 <link rel="stylesheet" href="WebStyle.css">
-<body>
-    <header class="page-header" >
-        <a href="http://127.0.0.1:5500/ProjektiWEB/Home.html"><img src="bNE_Logo-noBG.png" alt="bNE" style="width: 125px; height: 100px;"></a>
-            <ul class="page-header_nav-list-home">
-                <li>
-                    <a href="http://127.0.0.1:5500/ProjektiWEB/Home.html" aria-current="page" class="page-header_nav-link-home">
-                        <div id="box">HOME</div>
-                        <script src="index.js"></script>
-                    </a>
-                </li>
-            </ul>
-            <ul class="page-header_nav-list-shop">
-                <li>
-                    <a href="https://shop.gjirafa.gg/" aria-current="page" class="page-header_nav-link-shop">
-                        <div id="box1">SHOP</div>
-                        <script src="index2.js"></script>
-                    </a>
-                </li>
-            </ul>
-            <ul class="page-header_nav-list-team">
-                <li>
-                    <a href="http://127.0.0.1:5500/ProjektiWEB/Team.html" aria-current="page" class="page-header_nav-link-team">
-                        <div id="box2">TEAM</div>
-                        <script src="index3.js"></script>
-                    </a>
-                </li>
-            </ul>
-            <ul class="page-header_nav-list-ranking">
-                <li>
-                    <a href="http://127.0.0.1:5500/ProjektiWEB/Ranking.html" aria-current="page" class="page-header_nav-link-ranking">
-                        <div id="box3">RANKING</div>
-                        <script src="index4.js"></script>
-                    </a>
-                </li>
-            </ul>
-            <ul class="page-header_nav-list-games">
-                <li>
-                    <a href="http://127.0.0.1:5500/ProjektiWEB/Games.html" aria-current="page" class="page-header_nav-link-games">
-                        <div id="box4">GAMES</div>
-                        <script src="index5.js"></script>
-                    </a>
-                </li>
-            </ul>
-            <ul class="page-header_nav-list-partners">
-                <li>
-                    <a href="http://127.0.0.1:5500/ProjektiWEB/Partners.html" aria-current="page" class="page-header_nav-link-partners">
-                        <div id="box5">PARTNERS</div>
-                        <script src="index6.js"></script>
-                    </a>
-                </li>
-            </ul>
-            <ul class="page-header_nav-list-stream">
-                <li>
-                    <a href="http://127.0.0.1:5500/ProjektiWEB/Stream.html" aria-current="page" class="page-header_nav-link-stream">
-                        <div id="box6">STREAM</div>
-                        <script src="index7.js"></script>
-                    </a>
-                </li>
-            </ul>
-            <ul class="page-header_nav-list-aboutus">
-                <li>
-                    <a href="http://127.0.0.1:5500/ProjektiWEB/About Us.html" aria-current="page" class="page-header_nav-link-aboutus">
-                        <div id="box7">ABOUT&nbsp;US</div>
-                        <script src="index8.js"></script>
-                    </a>
-                </li>
-            </ul>
-            <ul class="page-header_nav-list-login">
-                <li>
-                    <a href="http://127.0.0.1:5500/ProjektiWEB/Login.htm" aria-current="page" class="page-header_nav-link-login">
-                        <i class="fa-regular fa-user"></i>
-                    </a>
-                </li>
-            </ul>
-    </header>
+<body>          
+    <?php include '../ProjektiWEB/view/header.php'?>
     <div class="players-bNE">
         <div class="player-Carlo">
             <div class="playerNickname-Carlo">
-                    <a href="#" aria-current="page" class="team-player-Carlo"><img src="BabaCarloo.png" alt="BabaCarloo" style="width: 240px; height:210px;"></a>
+                    <a href="#" aria-current="page" class="team-player-Carlo"><img src="../ProjektiWEB/images/BabaCarloo.png" alt="BabaCarloo" style="width: 240px; height:210px;"></a>
                 </div>
                 <div class="text-per-player">
-                    <h2>Dionis 'sinnopsyy' Budeci <img src="XK.webp" alt=""></h2>
+                    <h2>Dionis 'sinnopsyy' Budeci <img src="../ProjektiWEB/images/XK.webp" alt=""></h2>
                     <p>Dionisi një lojtar profesional ne fushen e lojes CSGO.</p>
                     <h4>Ai është pjesë e ekipës Bad News Eagles</h4>
                     <h4>Së fundmi ata me ekipën janë kualifikuar në Rio Major ku kanë triumfuar në Legends Stage</h4>
@@ -109,10 +36,10 @@
         </div>
         <div class="player-BabaSchule">
                 <div class="playerNickname-BabaSchule">
-                    <a href="#" aria-current="page" class="team-player-BabaSchule"><img src="BabaSchule.png" alt="BabaSchule" style="width: 240px; height:210px;"></a> 
+                    <a href="#" aria-current="page" class="team-player-BabaSchule"><img src="../ProjektiWEB/images/BabaSchule.png" alt="BabaSchule" style="width: 240px; height:210px;"></a> 
                 </div>
                 <div class="text-per-player">
-                    <h2>Rigon 'rigoN' Gashi <img src="CH.webp" alt=""> <img src="XK.webp" alt=""></h2>
+                    <h2>Rigon 'rigoN' Gashi <img src="../ProjektiWEB/images/CH.webp" alt=""> <img src="XK.webp" alt=""></h2>
                     <p>Rigoni një super lojtar ne fushen e lojes CSGO.</p>
                     <h4>Ai është pjesë e ekipës Bad News Eagles</h4>
                     <h4>Së fundmi ata me ekipën janë kualifikuar në Rio Major ku kanë triumfuar në Legends Stage</h4>
@@ -131,10 +58,10 @@
         </div>
         <div class="player-Huanita">
                 <div class="playerNickname-Huanita">
-                    <a href="#" aria-current="page" class="team-player-Huanita"><img src="Huanita.png" alt="Huanita" style="width: 240px; height:210px;"></a>
+                    <a href="#" aria-current="page" class="team-player-Huanita"><img src="../ProjektiWEB/images/Huanita.png" alt="Huanita" style="width: 240px; height:210px;"></a>
                 </div>
                 <div class="text-per-player">
-                    <h2>Flatron 'juanflatroo' Halimi <img src="XK.webp" alt=""></h2>
+                    <h2>Flatron 'juanflatroo' Halimi <img src="../ProjektiWEB/images/XK.webp" alt=""></h2>
                     <p>Flatro një super lojtar ne fushen e lojes CSGO.</p>
                     <h4>Ai është pjesë e ekipës Bad News Eagles</h4>
                     <h4>Së fundmi ata me ekipën janë kualifikuar në Rio Major ku kanë triumfuar në Legends Stage</h4>
@@ -154,10 +81,10 @@
         </div>
         <div class="player-XHiiieks">
                 <div class="playerNickname-XHiiieks">
-                    <a href="#" aria-current="page" class="team-player-XHiiieks"><img src="XHiiieks.png" alt="XHiiieks" style="width: 240px; height:210px;"></a>
+                    <a href="#" aria-current="page" class="team-player-XHiiieks"><img src="../ProjektiWEB/images/XHiiieks.png" alt="XHiiieks" style="width: 240px; height:210px;"></a>
                 </div>
                 <div class="text-per-player">
-                    <h2>Genc 'gxx-' Kolgeci <img src="XK.webp" alt=""></h2>
+                    <h2>Genc 'gxx-' Kolgeci <img src="../ProjektiWEB/images/XK.webp" alt=""></h2>
                     <p>Genci një super lojtar ne fushen e lojes CSGO.</p>
                     <h4>Ai është pjesë e ekipës Bad News Eagles</h4>
                     <h4>Së fundmi ata me ekipën janë kualifikuar në Rio Major ku kanë triumfuar në Legends Stage</h4>
@@ -177,10 +104,10 @@
         </div>
         <div class="player-BabaQaz">
                 <div class="playerNickname-BabaQaz">
-                    <a href="#" aria-current="page" class="team-player-BabaQaz"><img src="BabaQaz.png" alt="BabaQaz" style="width: 240px; height:210px;"></a>
+                    <a href="#" aria-current="page" class="team-player-BabaQaz"><img src="../ProjektiWEB/images/BabaQaz.png" alt="BabaQaz" style="width: 240px; height:210px;"></a>
                 </div>
                 <div class="text-per-player">
-                    <h2>Sener 'SENER1' Mahmuti <img src="XK.webp" alt=""></h2>
+                    <h2>Sener 'SENER1' Mahmuti <img src="../ProjektiWEB/images/XK.webp" alt=""></h2>
                     <p>Seneri një super lojtar ne fushen e lojes CSGO.</p>
                     <h4>Ai është pjesë e ekipës Bad News Eagles</h4>
                     <h4>Së fundmi ata me ekipën janë kualifikuar në Rio Major ku kanë triumfuar në Legends Stage</h4>
@@ -199,19 +126,6 @@
                 </div>
         </div>
     </div>
-    <footer>
-        <div class="footer-content">
-            <h3>BAD NEWS EAGLES</h3>
-            <p>Per te kontaktuar ju lutem zgjedhni opsionet ne vazhdim :</p>
-            <ul class="socials">
-                <li><a href="https://www.facebook.com/badnewseagle%22%3E"> <i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://twitter.com/_badnewseagles?lang=en%22%3E"> <i class="fa fa-twitter"></i></a></li>
-                <li><a href="https://www.youtube.com/@xhocii%22%3E"> <i class="fa fa-youtube"></i></a></li>
-            </ul>
-        </div>
-        <div class="footer-bottom">
-            <p>copyright &copy;2022 BNE. Designed by <span>TEAMWEB</span></p>
-        </div>
-    </footer>
+    <?php include '../ProjektiWEB/view/footer.php'?>
 </body>
 </html>

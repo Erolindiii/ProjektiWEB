@@ -2,7 +2,7 @@
 
    <div class="flex">
 
-      <a href="#" class="logo">Bad News Eagles merch</a>
+      <a href="#" class="logo"><img src="../bNE_Logo-noBG.png" alt="bNE" style="width: 125px; height: 100px;">Bad News Eagles merch</a>
 
       <nav class="navbar">
          <a href="admin.php">add products</a>

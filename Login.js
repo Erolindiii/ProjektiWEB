@@ -32,11 +32,3 @@
     login.addEventListener("click", ( )=>{
         container.classList.remove("active");
     });
-
-    //after clicking login & sigup
-    // afterSignup.addEventListener("click",()=>{
-    //     window.location.href="Home.html";
-    // });
-    // afterLogin.addEventListener("click",()=>{
-    //     window.location.href="Home.html";
-    // });

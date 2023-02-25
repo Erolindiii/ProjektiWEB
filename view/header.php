@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bad News Eagles</title>
-    <script src="https://kit.fontawesome.com/3606fe9745.js" crossorigin="anonymous"></script>
-</head>
-<link rel="stylesheet" href="WebStyle.css">
-<body>
-    <header class="page-header" >
-    <a href="http://127.0.0.1:5500/ProjektiWEB/Home.html"><img src="bNE_Logo-noBG.png" alt="bNE" style="width: 125px; height: 100px;"></a>
+<header class="page-header" >
+    <a href="http://127.0.0.1:5500/ProjektiWEB/Home.html"><img src="../ProjektiWEB/images/bNE_Logo-noBG.png" alt="bNE" style="width: 125px; height: 100px;"></a>
         <ul class="page-header_nav-list-home">
             <li>
                 <a href="http://127.0.0.1:5500/ProjektiWEB/Home.html" aria-current="page" class="page-header_nav-link-home">
@@ -83,49 +72,3 @@
             </li>
         </ul>
     </header>
-    <main>
-    <div class="slider">
-        <div class="images">
-            <img src="win-against-faze.png" alt="" id="imgsh"><img src="image1.jpg" alt="" id="imgsh"><img src="image2.jpg" alt="" id="imgsh"><img src="image3.jpg" alt="" id="imgsh">
-        </div>
-    </div>
-    <div class="buttons">
-        <label onclick="showPht1()"></label>
-        <label onclick="showPht2()"></label>
-        <label onclick="showPht3()"></label>
-        <label onclick="showPht4()"></label>
-        <script src="SlideShowHome.js"></script>
-    </div>
-    </main>
-    <div class="underslider">
-        <div class="content">
-            <div class="content1">
-                <img src="win-against-faze.png" alt="bNE" >
-                <p>Win against faze </p>
-            </div>
-                <div class="content2">
-                    <img src="day-one-riomajor.png" alt="bNE" >
-                    <p>Day one Rio Major </p>
-                </div>
-                <div class="content3">
-                    <img src="challenger-stage-day1.png" alt="bNE" >
-                    <p>Challenger Stage Day 1 </p>
-                </div>  
-        </div>
-    </div>
-    <footer>
-        <div class="footer-content">
-            <h3>BAD NEWS EAGLES</h3>
-            <p>Per te kontaktuar ju lutem zgjedhni opsionet ne vazhdim :</p>
-            <ul class="socials">
-                <li><a href="https://www.facebook.com/badnewseagle%22%3E"> <i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://twitter.com/_badnewseagles?lang=en%22%3E"> <i class="fa fa-twitter"></i></a></li>
-                <li><a href="https://www.youtube.com/@xhocii%22%3E"> <i class="fa fa-youtube"></i></a></li>
-            </ul>
-        </div>
-        <div class="footer-bottom">
-            <p>copyright &copy;2022 BNE. Designed by <span>TEAMWEB</span></p>
-        </div>
-    </footer>
-</body>
-</html>
