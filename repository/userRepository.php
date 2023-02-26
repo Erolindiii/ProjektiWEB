@@ -1,12 +1,15 @@
 <?php 
 include '../database/databaseConnection.php';
+
 class UserRepository{
     private $connection;
 
     function __construct(){
-        $conn = new DBConnection;
+        $conn = new \DBConnection;
         $this->connection = $conn->startConnection();
+
     }
+
     function insertUser($user){
         $conn = $this->connection;
 
@@ -22,6 +25,7 @@ class UserRepository{
         $statement->execute([$id,$name,$surname,$email,$password]);
         echo "<script> alert('User has been inserted successfuly!') </script>";
     }
+
     function getAllUsers(){
         $conn = $this->connection;
 
@@ -31,9 +35,11 @@ class UserRepository{
 
         return $users;
     }
-    function getUserByUsernameAndPassword($username,$password){
+
+    function getUserByNameAndPassword($name,$password){
       
     }
+
     function getUserById($id){
       $conn = $this->connection;
 
@@ -43,7 +49,9 @@ class UserRepository{
 
       return $user;
     }
-    function updateUser($id,$name,$surname,$email,$password,$username){
+
+
+    function updateUser($id,$name,$surname,$email,$password){
         $conn = $this->connection;
 
         $sql = "UPDATE user SET name=?,surname=?,email=?,password=? where id=?";
@@ -53,6 +61,7 @@ class UserRepository{
         $statement->execute([$name,$surname,$email,$password,$id]);
         echo "<script> alert('User has been updated successfuly!') </script>";
     }
+
     function deleteUserById($id){
         $conn = $this->connection;
 
@@ -63,4 +72,6 @@ class UserRepository{
         echo "<script> alert('User has been deleted successfuly!') </script>";
     }
 }
+
+
 ?>

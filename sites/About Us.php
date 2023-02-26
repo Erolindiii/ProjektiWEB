@@ -7,9 +7,9 @@
     <title>About Us</title>
     <script src="https://kit.fontawesome.com/3606fe9745.js" crossorigin="anonymous"></script>
 </head>
-<link rel="stylesheet" href="WebStyle.css">
+<link rel="stylesheet" href="../WebStyle.css">
 <body>
-        <?php include '../ProjektiWEB/view/header.php'?>
+        <?php include '../view/header.php'?>
         <div class="about">
             <div class="aboutus-head">
                 <h1>BAD NEWS EAGLES</h1><br>
@@ -68,8 +68,8 @@ typewriter();
         </script>
 
 <div class="photo-foraboutus"><br>
-    <a href="https://gjirafa50.com/"><img src="../ProjektiWEB/images/partner-logo.png" alt="" style="height: 50px;"></a>
+    <a href="https://gjirafa50.com/"><img src="../images/partner-logo.png" alt="" style="height: 50px;"></a>
 </div>
-<?php include '../ProjektiWEB/view/footer.php'?>
+<?php include '../view/footer.php'?>
 </body>
 </html>

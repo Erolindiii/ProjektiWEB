@@ -7,9 +7,9 @@
     <title>Games</title>
     <script src="https://kit.fontawesome.com/3606fe9745.js" crossorigin="anonymous"></script>
 </head>
-<link rel="stylesheet" href="WebStyle.css">
+<link rel="stylesheet" href="../WebStyle.css">
 <body>
-        <?php include '../ProjektiWEB/view/header.php'?>
+        <?php include '../view/header.php'?>
         <div class="main-games">
             <div class="games">
                 <h2>Për momentin nuk është duke u zhvilluar asnjë lojë pasi që është mbyllur sezona e lojrave internacionale të CSGO</h2><br>
@@ -18,6 +18,6 @@
                 <br>
             </div>
         </div>
-        <?php include '../ProjektiWEB/view/footer.php'?>
+        <?php include '../view/footer.php'?>
 </body>
 </html>

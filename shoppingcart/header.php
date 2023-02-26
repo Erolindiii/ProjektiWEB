@@ -2,10 +2,10 @@
 
    <div class="flex">
 
-      <a href="#" class="logo"><img src="../bNE_Logo-noBG.png" alt="bNE" style="width: 125px; height: 100px;">Bad News Eagles merch</a>
-
+      <a href="#" class="logo"><img src="../images/bNE_Logo-noBG.png" style="width: 125px; height: 100px;">Bad News Eagles Merch &nbsp;&nbsp;&nbsp;&nbsp;</a>
+      
       <nav class="navbar">
-         <a href="admin.php">add products</a>
+         <a href="admin.php">&nbsp&nbsp add products</a>
          <a href="products.php">view products</a>
       </nav>
 
