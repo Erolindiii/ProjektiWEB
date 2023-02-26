@@ -1,4 +1,5 @@
 <?php 
+
 class User{
     private $id;
     private $name;
@@ -13,6 +14,7 @@ class User{
          $this->email=$email;
          $this->password=$password;
     }
+
 
     function getId(){
         return $this->id;

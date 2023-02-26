@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Partners</title>
     <script src="https://kit.fontawesome.com/3606fe9745.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../images/bNE_Logo-noBG.ico" type="image/x-icon">
 </head>
 <link rel="stylesheet" href="../WebStyle.css">
 <link href="https://fonts.cdnfonts.com/css/galette" rel="stylesheet">

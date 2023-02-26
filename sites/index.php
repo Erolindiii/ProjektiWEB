@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bad News Eagles</title>
     <script src="https://kit.fontawesome.com/3606fe9745.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../images/bNE_Logo-noBG.ico" type="image/x-icon">
 </head>
 <link rel="stylesheet" href="../WebStyle.css">
 <body>
@@ -28,18 +29,19 @@
         <div class="content">
             <div class="content1">
                 <img src="../images/win-against-faze.png" alt="bNE" >
-                <p>Win against faze </p>
+                <?php echo 'Win against Faze' ?>
             </div>
                 <div class="content2">
                     <img src="../images/day-one-riomajor.png" alt="bNE" >
-                    <p>Day one Rio Major </p>
+                    <?php echo 'Day one at Rio Major' ?>
                 </div>
                 <div class="content3">
                     <img src="../images/challenger-stage-day1.png" alt="bNE" >
-                    <p>Challenger Stage Day 1 </p>
+                    <?php echo 'Challenger Stage Day 1' ?>
                 </div>  
         </div>
     </div>
+
     <?php include '../view/footer.php'?>
 </body>
 </html>

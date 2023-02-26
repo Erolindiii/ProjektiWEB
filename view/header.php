@@ -1,8 +1,8 @@
 <header class="page-header" >
-    <a href="http://localhost:6969/ProjektiWEB/ProjektiWEB/sites/Home.php"><img src="../images/bNE_Logo-noBG.png" alt="bNE" style="width: 125px; height: 100px;"></a>
+    <a href="http://localhost:6969/ProjektiWEB/ProjektiWEB/sites/index.php"><img src="../images/bNE_Logo-noBG.png" alt="bNE" style="width: 125px; height: 100px;"></a>
         <ul class="page-header_nav-list-home">
             <li>
-                <a href="http://localhost:6969/ProjektiWEB/ProjektiWEB/sites/Home.php" aria-current="page" class="page-header_nav-link-home">
+                <a href="http://localhost:6969/ProjektiWEB/ProjektiWEB/sites/index.php" aria-current="page" class="page-header_nav-link-home">
                     <div id="box">HOME</div>
                     <script src="../index.js"></script>
                 </a>
@@ -10,7 +10,7 @@
         </ul>
         <ul class="page-header_nav-list-shop">
             <li>
-                <a href="https://shop.gjirafa.gg/" aria-current="page" class="page-header_nav-link-shop">
+                <a href="http://localhost:6969/ProjektiWEB/ProjektiWEB/shoppingcart/products.php" aria-current="page" class="page-header_nav-link-shop">
                     <div id="box1">SHOP</div>
                     <script src="../index2.js"></script>
                 </a>
@@ -74,15 +74,9 @@
                             <i class="fa-regular fa-user"></i>
                         </button>
                         <div class="dropdown-content">
-                            <?php
-                                if (isset($_SESSION['email'])) {
-                                    echo "<a href='#'>" . $_SESSION['name'] . "</a>";
-                                    echo "<a href='../controller/logout.php'>Logout</a>";
-                                } else {
-                                    echo "<a href='#'>You are not logged in</a>";
-                                    echo "<a href='../view/register.php'>Login</a>";
-                                }
-                            ?>
+                            <a href="#">You are not logged in.</a>
+                            <a href="http://localhost:6969/ProjektiWEB/ProjektiWEB/view/register.php">Login</a>
+                            <a href="#">Log out</a> 
                         </div>
                     </div>
                 </div>

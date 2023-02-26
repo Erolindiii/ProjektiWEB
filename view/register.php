@@ -5,43 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/3606fe9745.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <title>Bad News Eagles</title>
-    <link rel="stylesheet" href="../WebStyle.css">
+    <link rel="icon" href="../images/bNE_Logo-noBG.ico" type="image/x-icon">
+    <title>Login & Register</title>
 </head>
+<link rel="stylesheet" href="../WebStyle.css">
 <body>
-    <?php 
-    session_start();
-    include 'header.php'
-    ?>
-<?php
-
-include('../database/databaseConnection.php');
-
-if (isset($_POST['email'])) {
-    $conn = (new DBConnection())->startConnection();
-
-    $email = $_POST['email'];
-    $password = $_POST['password'];
-
-    $query = "SELECT * FROM user WHERE email=:email AND password=:password";
-    $stmt = $conn->prepare($query);
-    $stmt->bindParam(':email', $email);
-    $stmt->bindValue(':password', md5($password), PDO::PARAM_STR);
-    $stmt->execute();
-
-    $result = $stmt->fetch(PDO::FETCH_ASSOC);
-
-    if ($result) {
-        $_SESSION['email'] = $email;
-        header("Location: http://localhost:6969/ProjektiWEB/ProjektiWEB/Home.php");
-        exit();
-} else {
-        // echo "<div class='form'><h3>Email/password is incorrect.</h3><br/>Click here to <a href='login.php'>Login</a></div>";
-}
-}
-?>
-    <div class="container">
+    <?php include '../view/header.php'?>
+<div class="container">
         <div class="forms">
             <div class="form login">
                 <span class="title">Login</span>
@@ -69,6 +39,7 @@ if (isset($_POST['email'])) {
                         <input type="submit" value="Login" name="submit">
                     </div>
                 </form>
+
                 <div class="login-signup">
                     <span class="text">Not a member?
                         <a href="#" class="text signup-link">Sign Up</a>
@@ -109,7 +80,6 @@ if (isset($_POST['email'])) {
                          <input type="submit" name="registerBtn" value="Sign Up">
                     </div>
                 </form>
-
                 <div class="login-signup">
                     <span class="text">Already a member?
                         <a href="#" class="text login-link">Login Now</a>
@@ -118,7 +88,6 @@ if (isset($_POST['email'])) {
             </div>
         </div>
     </div>
-    <script src="../Login.js"></script>
    <?php include_once '../controller/registerController.php'?>
 </body>
-</html>        
+</html>

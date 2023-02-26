@@ -5,9 +5,8 @@ class UserRepository{
     private $connection;
 
     function __construct(){
-        $conn = new \DBConnection;
+        $conn = new DBConnection;
         $this->connection = $conn->startConnection();
-
     }
 
     function insertUser($user){
@@ -36,7 +35,7 @@ class UserRepository{
         return $users;
     }
 
-    function getUserByNameAndPassword($name,$password){
+    function getUserByUsernameAndPassword($username,$password){
       
     }
 

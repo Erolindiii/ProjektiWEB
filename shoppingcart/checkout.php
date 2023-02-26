@@ -11,7 +11,6 @@ if(isset($_POST['order_btn'])){
    $flat = $_POST['flat'];
    $street = $_POST['street'];
    $city = $_POST['city'];
-   $state = $_POST['state'];
    $country = $_POST['country'];
    $pin_code = $_POST['pin_code'];
 
@@ -26,7 +25,7 @@ if(isset($_POST['order_btn'])){
    };
 
    $total_product = implode(', ',$product_name);
-   $detail_query = mysqli_query($conn, "INSERT INTO `order`(name, number, email, method, flat, street, city, state, country, pin_code, total_products, total_price) VALUES('$name','$number','$email','$method','$flat','$street','$city','$state','$country','$pin_code','$total_product','$price_total')") or die('query failed');
+   $detail_query = mysqli_query($conn, "INSERT INTO `order`(name, number, email, method, flat, street, city, country, pin_code, total_products, total_price) VALUES('$name','$number','$email','$method','$flat','$street','$city','$country','$pin_code','$total_product','$price_total')") or die('query failed');
 
    if($cart_query && $detail_query){
       echo "
@@ -41,7 +40,7 @@ if(isset($_POST['order_btn'])){
             <p> your name : <span>".$name."</span> </p>
             <p> your number : <span>".$number."</span> </p>
             <p> your email : <span>".$email."</span> </p>
-            <p> your address : <span>".$flat.", ".$street.", ".$city.", ".$state.", ".$country." - ".$pin_code."</span> </p>
+            <p> your address : <span>".$flat.", ".$street.", ".$city.", ".$country." - ".$pin_code."</span> </p>
             <p> your payment mode : <span>".$method."</span> </p>
             <p>(*pay when product arrives*)</p>
          </div>
@@ -60,6 +59,7 @@ if(isset($_POST['order_btn'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="../images/bNE_Logo-noBG.ico" type="image/x-icon">
    <title>checkout</title>
 
    <!-- font awesome cdn link  -->
@@ -98,7 +98,7 @@ if(isset($_POST['order_btn'])){
          echo "<div class='display-order'><span>your cart is empty!</span></div>";
       }
       ?>
-      <span class="grand-total"> grand total : $<?= $grand_total; ?>/- </span>
+      <span class="grand-total"> Total : <?= $grand_total; ?>€ </span>
    </div>
 
       <div class="flex">
@@ -133,10 +133,6 @@ if(isset($_POST['order_btn'])){
          <div class="inputBox">
             <span>city</span>
             <input type="text" placeholder="e.g. Prishtina" name="city" required>
-         </div>
-         <div class="inputBox">
-            <span>state</span>
-            <input type="text" placeholder="e.g. Prishtina" name="state" required>
          </div>
          <div class="inputBox">
             <span>country</span>

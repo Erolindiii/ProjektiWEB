@@ -29,6 +29,7 @@ if(isset($_GET['delete_all'])){
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" href="../images/bNE_Logo-noBG.ico" type="image/x-icon">
    <title>shopping cart</title>
 
    <!-- font awesome cdn link  -->
